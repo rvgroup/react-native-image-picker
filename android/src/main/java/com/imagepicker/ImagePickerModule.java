@@ -133,7 +133,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
         callback.invoke(getVideoResponseMap(uri, options, reactContext));
     }
 
-    boolean _isMyRequest(requestCode) {
+    boolean _isMyRequest(String requestCode) {
         return requestCode == REQUEST_LAUNCH_IMAGE_CAPTURE
             || requestCode == REQUEST_LAUNCH_IMAGE_LIBRARY
             || requestCode == REQUEST_LAUNCH_VIDEO_LIBRARY
